@@ -1,14 +1,9 @@
 const cards = [
-   
     { id: 1, img: 'club.png' },
-  
     { id: 2, img: 'diamond.png' },
-  
     { id: 3, img: 'heart.png' },
-
     { id: 4, img: 'spades.png' },
 ];
-
 
 const duplicatedCards = cards.concat(cards);
 
@@ -21,7 +16,6 @@ function createCard(card) {
     cardElement.dataset.id = card.id;
 
     const imgElement = document.createElement('img');
-  
     imgElement.src = card.img;
     cardElement.appendChild(imgElement);
 
@@ -70,11 +64,22 @@ function hideCards() {
 
 function initializeGame() {
     const gameContainer = document.querySelector('.game-container');
+    
+    // Shuffle the duplicatedCards array
+    shuffleArray(duplicatedCards);
 
     duplicatedCards.forEach(card => {
         const newCard = createCard(card);
         gameContainer.appendChild(newCard);
     });
+}
+
+// Function to shuffle an array using the Fisher-Yates algorithm
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
 }
 
 initializeGame();
