@@ -5,7 +5,7 @@
 }
 
 .card {
-    width: 100px;
+    width: 80px;
     height: 100px;
     background-color: #3498db;
     border-radius: 5px;
@@ -17,7 +17,7 @@
 
 .card img {
     display: none;
-    width: 50%;
+    width: 60%;
     height: 50%;
     border-radius: 5px;
 }
