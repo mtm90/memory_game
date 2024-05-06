@@ -1,16 +1,16 @@
 const cards = [
-    { id: 1, img: 'aquarius.png' },
-    { id: 2, img: 'aries.png' },
-    { id: 3, img: 'cancer.png' },
-    { id: 4, img: 'capricorn.png' },
-    { id: 5, img: 'gemini.png' },
-    { id: 6, img: 'leo.png' },
-    { id: 7, img: 'libra.png' },
-    { id: 8, img: 'pisces.png' },
-    { id: 9, img: 'sagittarius.png' },
-    { id: 10, img: 'scorpio.png' },
-    { id: 11, img: 'taurus.png' },
-    { id: 12, img: 'virgo.png' },
+    { id: 1, img: './icons/aquarius.png' },
+    { id: 2, img: './icons/aries.png' },
+    { id: 3, img: './icons/cancer.png' },
+    { id: 4, img: './icons/capricorn.png' },
+    { id: 5, img: './icons/gemini.png' },
+    { id: 6, img: './icons/leo.png' },
+    { id: 7, img: './icons/libra.png' },
+    { id: 8, img: './icons/pisces.png' },
+    { id: 9, img: './icons/sagittarius.png' },
+    { id: 10, img: './icons/scorpio.png' },
+    { id: 11, img: './icons/taurus.png' },
+    { id: 12, img: './icons/virgo.png' },
 ];
 
 const duplicatedCards = cards.concat(cards);
