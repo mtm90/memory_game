@@ -98,6 +98,18 @@ initializeGame();
 function showCompletionMessage() {
     const endTime = new Date();
     const elapsedTime = Math.floor((endTime - startTime) / 1000); // Convert milliseconds to seconds
-    alert(`Congratulations! You completed the game in ${elapsedTime} seconds.`);
+    let message;
+
+    if (elapsedTime < 30) {
+        message = `Congratulations! You completed the game in ${elapsedTime} seconds. That was fast!`;
+    } else if (elapsedTime >= 30 && elapsedTime <= 45) {
+        message = `Congratulations! You completed the game in ${elapsedTime} seconds. That was nice but you can do better!`;
+    } else if (elapsedTime > 45 && elapsedTime <= 120) {
+        message = `Congratulations! You completed the game in ${elapsedTime} seconds. That was kinda mid, try again!`;
+    } else {
+        message = `Congratulations! You completed the game in ${elapsedTime} seconds. That was kinda slow, you can certainly do better!`;
+    }
+
+    alert(message);
 }
 
