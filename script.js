@@ -100,11 +100,11 @@ function showCompletionMessage() {
     const elapsedTime = Math.floor((endTime - startTime) / 1000); // Convert milliseconds to seconds
     let message;
 
-    if (elapsedTime < 90) {
+    if (elapsedTime < 75) {
         message = `Congratulations! You completed the game in ${elapsedTime} seconds. That was fast, i'm impressed.`;
-    } else if (elapsedTime >= 90 && elapsedTime <= 105) {
+    } else if (elapsedTime >= 75 && elapsedTime <= 90) {
         message = `Congratulations! You completed the game in ${elapsedTime} seconds. That was nice but you can do better!`;
-    } else if (elapsedTime > 105 && elapsedTime <= 120) {
+    } else if (elapsedTime > 90 && elapsedTime <= 120) {
         message = `Congratulations! You completed the game in ${elapsedTime} seconds. That was kinda mid, try again!`;
     } else {
         message = `Congratulations! You completed the game in ${elapsedTime} seconds. That was kinda slow, you can certainly do better!`;
