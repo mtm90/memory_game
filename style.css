@@ -30,7 +30,7 @@
 }
 
 /* Responsive layout */
-@media screen and (min-width: 1079px) {
+@media screen and (min-width: 1080px) {
     .game-container {
         justify-content: flex-start; /* Align cards to the start */
     }
@@ -40,7 +40,7 @@
         height: 120px; /* Adjust height for larger screens */
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
     .game-container {
         justify-content: flex-start; /* Align cards to the start */
     }
