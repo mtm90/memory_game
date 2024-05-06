@@ -36,8 +36,8 @@
     }
 
     .card {
-        width: 120px; /* Adjust width for larger screens */
-        height: 150px; /* Adjust height for larger screens */
+        width: 110px; /* Adjust width for larger screens */
+        height: 154px; /* Adjust height for larger screens */
     }
 }
 @media screen and (max-width: 320px) {
