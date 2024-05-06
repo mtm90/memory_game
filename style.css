@@ -46,7 +46,7 @@
     }
 
     .card {
-        width: 60px; /* Adjust width for smaller screens */
-        height: 75px; /* Adjust height for smaller screens */
+        width: 65px; /* Adjust width for smaller screens */
+        height: 90px; /* Adjust height for smaller screens */
     }
 }
