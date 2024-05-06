@@ -40,3 +40,13 @@
         height: 120px; /* Adjust height for larger screens */
     }
 }
+@media screen and (max-width: 800px) {
+    .game-container {
+        justify-content: flex-start; /* Align cards to the start */
+    }
+
+    .card {
+        width: 70px; /* Adjust width for larger screens */
+        height: 90px; /* Adjust height for larger screens */
+    }
+}
