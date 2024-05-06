@@ -17,6 +17,7 @@ const duplicatedCards = cards.concat(cards);
 
 let selectedCards = [];
 let matchedCards = [];
+let startTime;
 
 function createCard(card) {
     const cardElement = document.createElement('div');
@@ -53,7 +54,7 @@ function checkForMatch() {
         selectedCards = [];
 
         if (matchedCards.length === cards.length * 2) {
-            alert('Congratulations! You won the game!');
+            showCompletionMessage();
         }
     } else {
         setTimeout(() => {
@@ -80,9 +81,11 @@ function initializeGame() {
         const newCard = createCard(card);
         gameContainer.appendChild(newCard);
     });
+
+    // Start the timer
+    startTime = new Date();
 }
 
-// Function to shuffle an array using the Fisher-Yates algorithm
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -91,3 +94,10 @@ function shuffleArray(array) {
 }
 
 initializeGame();
+
+function showCompletionMessage() {
+    const endTime = new Date();
+    const elapsedTime = Math.floor((endTime - startTime) / 1000); // Convert milliseconds to seconds
+    alert(`Congratulations! You completed the game in ${elapsedTime} seconds.`);
+}
+
