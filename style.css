@@ -40,7 +40,7 @@
         height: 154px; /* Adjust height for larger screens */
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 380px) {
     .game-container {
         justify-content: flex-start; /* Align cards to the start */
     }
