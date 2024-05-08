@@ -36,7 +36,7 @@ function createCard(card) {
             if (selectedCards.length === 2) {
                 setTimeout(() => {
                     checkForMatch();
-                }, 400);
+                }, 500);
             }
         }
     });
@@ -59,7 +59,7 @@ function checkForMatch() {
     } else {
         setTimeout(() => {
             hideCards();
-        }, 400);
+        }, 500);
     }
 }
 
